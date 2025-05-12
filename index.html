@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Nepravidelné slovesá / Irregular Verbs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f6eeee;
+      color: #170f5a;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    button.pismeno_b {
+      background-color: #540a19;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_b:hover {
+      background-color: white;
+      color: #540a19;
+      border: 1px solid #540a19;
+    
+    
+    }
+
+    button.pismeno_c {
+      background-color: #2713bf;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_c:hover {
+      background-color: white;
+      color: #2713bf;
+      border: 1px solid #2713bf;
+    
+    
+    }
+
+    button.pismeno_d {
+      background-color: #0eb765;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_d:hover {
+      background-color: white;
+      color: #0eb765;
+      border: 1px solid #0eb765;
+    
+    
+    }
+
+    button.pismeno_e {
+      background-color: #501b9a;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_e:hover {
+      background-color: white;
+      color: #501b9a;
+      border: 1px solid #501b9a;
+    
+    
+    }
+
+    button.pismeno_f {
+      background-color: #144c71;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_f:hover {
+      background-color: white;
+      color: #144c71;
+      border: 1px solid #144c71;
+    
+    
+    }
+
+    button.pismeno_g {
+      background-color: #9a1452;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_g:hover {
+      background-color: white;
+      color: #9a1452;
+      border: 1px solid #9a1452;
+    
+    
+    }
+
+    button.pismeno_h {
+      background-color: #a6831c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_h:hover {
+      background-color: white;
+      color: #a6831c;
+      border: 1px solid #a6831c;
+    
+    
+    }
+
+    button.pismeno_k {
+      background-color: #061439;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_k:hover {
+      background-color: white;
+      color: #061439;
+      border: 1px solid #061439;
+    
+    
+    }
+
+    button.pismeno_l {
+      background-color: #0a5329;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_l:hover {
+      background-color: white;
+      color: #0a5329;
+      border: 1px solid #0a5329;
+    
+    
+    }
+
+    button.pismeno_m {
+      background-color: #d76812;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_m:hover {
+      background-color: white;
+      color: #d76812;
+      border: 1px solid #d76812;
+    
+    
+    }
+
+    button.pismeno_o {
+      background-color: #8ea226;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_o:hover {
+      background-color: white;
+      color: #8ea226;
+      border: 1px solid #8ea226;
+    
+    
+    }
+
+    button.pismeno_p {
+      background-color: #750d75;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_p:hover {
+      background-color: white;
+      color: #750d75;
+      border: 1px solid #750d75;
+    
+    
+    }
+
+    button.pismeno_r {
+      background-color: #cf1616;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_r:hover {
+      background-color: white;
+      color: #cf1616;
+      border: 1px solid #cf1616;
+    
+    
+    }
+
+    button.pismeno_s {
+      background-color: #31c6fd;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_s:hover {
+      background-color: white;
+      color: #31c6fd;
+      border: 1px solid #31c6fd;
+    
+    
+    }
+
+    button.pismeno_t {
+      background-color: #b57918;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_t:hover {
+      background-color: white;
+      color: #b57918;
+      border: 1px solid #b57918;
+    
+    
+    }
+
+    button.pismeno_u {
+      background-color: #30cfa4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_u:hover {
+      background-color: white;
+      color: #30cfa4;
+      border: 1px solid #30cfa4;
+    
+    
+    }
+
+    button.pismeno_w {
+      background-color: #cf17cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button.pismeno_w:hover {
+      background-color: white;
+      color: #cf17cc;
+      border: 1px solid #cf17cc;
+    
+    
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nepravidelné slovesá / Irregular Verbs</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Base Form (základný tvar)</th>
+        <th>Past Simple (minulý čas)</th>
+        <th>Past Participle (minulé príčastie)</th>
+        <th>Slovenský preklad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button class="pismeno_b" onclick="playSound('be')">be</button></td>
+        <td><button class="pismeno_b" onclick="playSound('waswere')">waswere</button></td>
+        <td><button class="pismeno_b" onclick="playSound('been')">been</button></td>
+        <td>byť</td>
+      </tr>
+      <tr>
+        <td><button class="pismeno_b" onclick="playSound('become')">become</button></td>
+        <td><button class="pismeno_b" onclick="playSound('became')">became</button></td>
+        <td><button class="pismeno_b" onclick="playSound('become')">become</button></td>
+        <td>stať sa</td>
+      </tr>
+      <tr>
+        <tr>
+          <td><button class="pismeno_b" onclick="playSound('begin')">begin</button></td>
+          <td><button class="pismeno_b" onclick="playSound('began')">began</button></td>
+          <td><button class="pismeno_b" onclick="playSound('begun')">begun</button></td>
+          <td>začať</td>
+        </tr>
+        <tr>
+          <td><button class="pismeno_b" onclick="playSound('bend')">bend</button></td>
+          <td><button class="pismeno_b" onclick="playSound('bent')">bent</button></td>
+          <td><button class="pismeno_b" onclick="playSound('bent')">bent</button></td>
+          <td>ohnúť, prehnúť</td>
+        </tr>
+        <tr>
+          <td><button class="pismeno_b" onclick="playSound('bite')">bite</button></td>
+          <td><button class="pismeno_b" onclick="playSound('bit')">bit</button></td>
+          <td><button class="pismeno_b" onclick="playSound('bitten')">bitten</button></td>
+          <td>hrýzť</td>
+        </tr>
+        <tr>
+          <tr>
+            <td><button class="pismeno_b" onclick="playSound('blow')">blow</button></td>
+            <td><button class="pismeno_b" onclick="playSound('blew')">blew</button></td>
+            <td><button class="pismeno_b" onclick="playSound('blown')">blown</button></td>
+            <td>fúkať</td>
+          </tr>
+          <tr>
+            <td><button class="pismeno_b" onclick="playSound('break')">break</button></td>
+            <td><button class="pismeno_b" onclick="playSound('broke')">broke</button></td>
+            <td><button class="pismeno_b" onclick="playSound('broken')">broken</button></td>
+            <td>rozbiť</td>
+          </tr>
+          <tr>
+            <td><button class="pismeno_b" onclick="playSound('bring')">bring</button></td>
+            <td><button class="pismeno_b" onclick="playSound('brought')">brought</button></td>
+            <td><button class="pismeno_b" onclick="playSound('brought')">brought</button></td>
+            <td>priniesť</td>
+          </tr>
+          <tr>
+            <tr>
+              <td><button class="pismeno_b" onclick="playSound('build')">build</button></td>
+              <td><button class="pismeno_b" onclick="playSound('built')">built</button></td>
+              <td><button class="pismeno_b" onclick="playSound('built')">built</button></td>
+              <td>stavať</td>
+            </tr>     
+            <tr>
+              <tr>
+                <td><button class="pismeno_b" onclick="playSound('burn')">burn</button></td>
+                <td><button class="pismeno_b" onclick="playSound('burnt')">burnt/burned</button></td>
+                <td><button class="pismeno_b" onclick="playSound('burnt')">burnt/burned</button></td>
+                <td>horieť</td>
+              </tr>
+              <tr>
+                <td><button class="pismeno_b" onclick="playSound('buy')">buy</button></td>
+                <td><button class="pismeno_b" onclick="playSound('bought')">bought</button></td>
+                <td><button class="pismeno_b" onclick="playSound('bought')">bought</button></td>
+                <td>kúpiť</td>
+              </tr>
+              <tr>
+                <td><button class="pismeno_c" onclick="playSound('can')">can</button></td>
+                <td><button class="pismeno_c" onclick="playSound('could')">could</button></td>
+                <td><button class="pismeno_c" onclick="playSound('beenableto')">been able to</button></td>
+                <td>môcť</td>
+              </tr>
+              <tr>
+                <tr>
+                  <td><button class="pismeno_c" onclick="playSound('catch')">catch</button></td>
+                  <td><button class="pismeno_c" onclick="playSound('caught')">caught</button></td>
+                  <td><button class="pismeno_c" onclick="playSound('caught')">caught</button></td>
+                  <td>chytiť</td>
+                </tr>
+                <tr>
+                  <tr>
+                    <td><button class="pismeno_c" onclick="playSound('come')">come</button></td>
+                    <td><button class="pismeno_c" onclick="playSound('came')">came</button></td>
+                    <td><button class="pismeno_c" onclick="playSound('come')">come</button></td>
+                    <td>prísť</td>
+                  </tr>
+                  <tr>
+                    <td><button class="pismeno_c" onclick="playSound('cost')">cost</button></td>
+                    <td><button class="pismeno_c" onclick="playSound('cost')">cost</button></td>
+                    <td><button class="pismeno_c" onclick="playSound('cost')">cost</button></td>
+                    <td>stáť (cena)</td>
+                  </tr>
+                  <tr>
+                    <td><button class="pismeno_c" onclick="playSound('cut')">cut</button></td>
+                    <td><button class="pismeno_c" onclick="playSound('cut')">cut</button></td>
+                    <td><button class="pismeno_c" onclick="playSound('cut')">cut</button></td>
+                    <td>rezať, strihať</td>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <td><button class="pismeno_d" onclick="playSound('do')">do</button></td>
+                      <td><button class="pismeno_d" onclick="playSound('did')">did</button></td>
+                      <td><button class="pismeno_d" onclick="playSound('done')">done</button></td>
+                      <td>robiť</td>
+                    </tr>
+                    <tr>
+                      <td><button class="pismeno_d" onclick="playSound('draw')">draw</button></td>
+                      <td><button class="pismeno_d" onclick="playSound('drew')">drew</button></td>
+                      <td><button class="pismeno_d" onclick="playSound('drawn')">drawn</button></td>
+                      <td>kresliť</td>
+                    </tr>
+                    <tr>
+                      <tr>
+                        <td><button class="pismeno_d" onclick="playSound('drink')">drink</button></td>
+                        <td><button class="pismeno_d" onclick="playSound('drank')">drank</button></td>
+                        <td><button class="pismeno_d" onclick="playSound('drunk')">drunk</button></td>
+                        <td>piť</td>
+                      </tr>
+                      <tr>
+                        <td><button class="pismeno_d" onclick="playSound('drive')">drive</button></td>
+                        <td><button class="pismeno_d" onclick="playSound('drove')">drove</button></td>
+                        <td><button class="pismeno_d" onclick="playSound('driven')">driven</button></td>
+                        <td>šoférovať</td>
+                      </tr>
+                      <tr>
+                        <td><button class="pismeno_e" onclick="playSound('eat')">eat</button></td>
+                        <td><button class="pismeno_e" onclick="playSound('ate')">ate</button></td>
+                        <td><button class="pismeno_e" onclick="playSound('eaten')">eaten</button></td>
+                        <td>jesť</td>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <td><button class="pismeno_f" onclick="playSound('fall')">fall</button></td>
+                          <td><button class="pismeno_f" onclick="playSound('fell')">fell</button></td>
+                          <td><button class="pismeno_f" onclick="playSound('fallen')">fallen</button></td>
+                          <td>spadnúť, padať</td>
+                        </tr>
+                        <tr>
+                          <tr>
+                            <td><button class="pismeno_f" onclick="playSound('feel')">feel</button></td>
+                            <td><button class="pismeno_f" onclick="playSound('felt')">felt</button></td>
+                            <td><button class="pismeno_f" onclick="playSound('felt')">felt</button></td>
+                            <td>cítiť</td>
+                          </tr>
+                          <tr>
+                            <tr>
+                              <td><button class="pismeno_f" onclick="playSound('fight')">fight</button></td>
+                              <td><button class="pismeno_f" onclick="playSound('fought')">fought</button></td>
+                              <td><button class="pismeno_f" onclick="playSound('fought')">fought</button></td>
+                              <td>bojovať, biť sa</td>
+                            </tr>
+                            <tr>
+                              <tr>
+                                <td><button class="pismeno_f" onclick="playSound('find')">find</button></td>
+                                <td><button class="pismeno_f" onclick="playSound('found')">found</button></td>
+                                <td><button class="pismeno_f" onclick="playSound('found')">found</button></td>
+                                <td>nájsť</td>
+                              </tr>
+                              <tr>
+                                <tr>
+                                  <td><button class="pismeno_f" onclick="playSound('fly')">fly</button></td>
+                                  <td><button class="pismeno_f" onclick="playSound('flew')">flew</button></td>
+                                  <td><button class="pismeno_f" onclick="playSound('flown')">flown</button></td>
+                                  <td>lietať</td>
+                                </tr>
+                                <tr>
+                                  <tr>
+                                    <td><button class="pismeno_f" onclick="playSound('forget')">forget</button></td>
+                                    <td><button class="pismeno_f" onclick="playSound('forgot')">forgot</button></td>
+                                    <td><button class="pismeno_f" onclick="playSound('forgotten')">forgotten</button></td>
+                                    <td>zabudnúť</td>
+                                  </tr>
+                                  <td><button class="pismeno_g" onclick="playSound('get')">get</button></td>
+                                  <td><button class="pismeno_g" onclick="playSound('got')">got</button></td>
+                                  <td><button class="pismeno_g" onclick="playSound('got')">got</button></td>
+                                  <td>dostať</td>
+                                </tr>
+                                <tr>
+                                  <tr>
+                                    <td><button class="pismeno_g" onclick="playSound('give')">give</button></td>
+                                    <td><button class="pismeno_g" onclick="playSound('gave')">gave</button></td>
+                                    <td><button class="pismeno_g" onclick="playSound('given')">given</button></td>
+                                    <td>dať</td>
+                                  </tr>
+                                  <tr>
+                                    <tr>
+                                      <td><button class="pismeno_g" onclick="playSound('go')">go</button></td>
+                                      <td><button class="pismeno_g" onclick="playSound('went')">went</button></td>
+                                      <td><button class="pismeno_g" onclick="playSound('gone')">gone</button></td>
+                                      <td>ísť</td>
+                                    </tr>
+                                    <tr>
+                                      <tr>
+                                        <td><button class="pismeno_g" onclick="playSound('grow')">grow</button></td>
+                                        <td><button class="pismeno_g" onclick="playSound('grew')">grew</button></td>
+                                        <td><button class="pismeno_g" onclick="playSound('grown')">grown</button></td>
+                                        <td>rásť</td>
+                                      </tr>
+                                      <tr>
+                                        <td><button class="pismeno_h" onclick="playSound('hang')">hang</button></td>
+                                        <td><button class="pismeno_h" onclick="playSound('hung')">hung</button></td>
+                                        <td><button class="pismeno_h" onclick="playSound('hung')">hung</button></td>
+                                        <td>vešať, zavesiť</td>
+                                      </tr>
+                                      <td><button class="pismeno_h" onclick="playSound('have')">have</button></td>
+                                      <td><button class="pismeno_h" onclick="playSound('had')">had</button></td>
+                                      <td><button class="pismeno_h" onclick="playSound('had')">had</button></td>
+                                      <td>mať</td>
+                                    </tr>
+                                    <tr>
+                                      <tr>
+                                        <td><button class="pismeno_h" onclick="playSound('hear')">hear</button></td>
+                                        <td><button class="pismeno_h" onclick="playSound('heard')">heard</button></td>
+                                        <td><button class="pismeno_h" onclick="playSound('heard')">heard</button></td>
+                                        <td>počuť</td>
+                                      </tr>
+                                      <tr>
+                                        <tr>
+                                          <td><button class="pismeno_h" onclick="playSound('hide')">hide</button></td>
+                                          <td><button class="pismeno_h" onclick="playSound('hid')">hid</button></td>
+                                          <td><button class="pismeno_h" onclick="playSound('hidden')">hidden</button></td>
+                                          <td>schovať</td>
+                                        </tr>
+                                        <tr>
+                                          <tr>
+                                            <td><button class="pismeno_h" onclick="playSound('hit')">hit</button></td>
+                                            <td><button class="pismeno_h" onclick="playSound('hit')">hit</button></td>
+                                            <td><button class="pismeno_h" onclick="playSound('hit')">hit</button></td>
+                                            <td>udrieť</td>
+                                          </tr>
+                                          <tr>
+                                            <td><button class="pismeno_h" onclick="playSound('hold')">hold</button></td>
+                                            <td><button class="pismeno_h" onclick="playSound('held')">held</button></td>
+                                            <td><button class="pismeno_h" onclick="playSound('held')">held</button></td>
+                                            <td>držať</td>
+                                          </tr>
+                                          <tr>
+                                            <td><button class="pismeno_k" onclick="playSound('keep')">keep</button></td>
+                                            <td><button class="pismeno_k" onclick="playSound('kept')">kept</button></td>
+                                            <td><button class="pismeno_k" onclick="playSound('kept')">kept</button></td>
+                                            <td>udržať</td>
+                                          </tr>
+                                          <tr>
+                                            <tr>
+                                              <td><button class="pismeno_k" onclick="playSound('know')">know</button></td>
+                                              <td><button class="pismeno_k" onclick="playSound('knew')">knew</button></td>
+                                              <td><button class="pismeno_k" onclick="playSound('known')">known</button></td>
+                                              <td>vedieť</td>
+                                            </tr>
+                                            <td><button class="pismeno_l" onclick="playSound('lay')">lay</button></td>
+                                            <td><button class="pismeno_l" onclick="playSound('laid')">laid</button></td>
+                                            <td><button class="pismeno_l" onclick="playSound('laid')">laid</button></td>
+                                            <td>ležať</td>
+                                          </tr>
+                                          <tr>
+                                            <tr>
+                                              <td><button class="pismeno_l" onclick="playSound('lead')">lead</button></td>
+                                              <td><button class="pismeno_l" onclick="playSound('led')">led</button></td>
+                                              <td><button class="pismeno_l" onclick="playSound('led')">led</button></td>
+                                              <td>viesť</td>
+                                            </tr>
+                                            <tr>
+                                              <tr>
+                                                <td><button class="pismeno_l" onclick="playSound('learn')">learn</button></td>
+                                                <td><button class="pismeno_l" onclick="playSound('learnt')">learned / learnt</button></td>
+                                                <td><button class="pismeno_l" onclick="playSound('learnt')">learned / learnt</button></td>
+                                                <td>učiť sa</td>
+                                              </tr>
+                                              <tr>
+                                                <td><button class="pismeno_l" onclick="playSound('leave')">leave</button></td>
+                                                <td><button class="pismeno_l" onclick="playSound('left')">left</button></td>
+                                                <td><button class="pismeno_l" onclick="playSound('left')">left</button></td>
+                                                <td>odísť</td>
+                                              </tr>
+                                              <tr>
+                                                <tr>
+                                                  <td><button class="pismeno_l" onclick="playSound('lend')">lend</button></td>
+                                                  <td><button class="pismeno_l" onclick="playSound('lent')">lent</button></td>
+                                                  <td><button class="pismeno_l" onclick="playSound('lent')">lent</button></td>
+                                                  <td>požičiať</td>
+                                                </tr>
+                                                <tr>
+                                                  <tr>
+                                                    <td><button class="pismeno_l" onclick="playSound('lose')">lose</button></td>
+                                                    <td><button class="pismeno_l" onclick="playSound('lost')">lost</button></td>
+                                                    <td><button class="pismeno_l" onclick="playSound('lost')">lost</button></td>
+                                                    <td>stratiť</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><button class="pismeno_m" onclick="playSound('make')">make</button></td>
+                                                    <td><button class="pismeno_m" onclick="playSound('made')">made</button></td>
+                                                    <td><button class="pismeno_m" onclick="playSound('made')">made</button></td>
+                                                    <td>urobiť, vyrobiť</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td><button class="pismeno_m" onclick="playSound('mean')">mean</button></td>
+                                                    <td><button class="pismeno_m" onclick="playSound('meant')">meant</button></td>
+                                                    <td><button class="pismeno_m" onclick="playSound('meant')">meant</button></td>
+                                                    <td>myslieť</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <tr>
+                                                      <td><button class="pismeno_m" onclick="playSound('meet')">meet</button></td>
+                                                      <td><button class="pismeno_m" onclick="playSound('met')">met</button></td>
+                                                      <td><button class="pismeno_m" onclick="playSound('met')">met</button></td>
+                                                      <td>stretnúť</td>
+                                                    </tr>
+                                                    <td><button class="pismeno_o" onclick="playSound('overcome')">overcome</button></td>
+                                                    <td><button class="pismeno_o" onclick="playSound('overcame')">overcame</button></td>
+                                                    <td><button class="pismeno_o" onclick="playSound('overcome')">overcome</button></td>
+                                                    <td>prekonať</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <tr>
+                                                      <td><button class="pismeno_r" onclick="playSound('read')">read</button></td>
+                                                      <td><button class="pismeno_r" onclick="playSound('read2')">read</button></td>
+                                                      <td><button class="pismeno_r" onclick="playSound('read2')">read</button></td>
+                                                      <td>čítať</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <tr>
+                                                        <td><button class="pismeno_r" onclick="playSound('ride')">ride</button></td>
+                                                        <td><button class="pismeno_r" onclick="playSound('rode')">rode</button></td>
+                                                        <td><button class="pismeno_r" onclick="playSound('ridden')">ridden</button></td>
+                                                        <td>jazdiť</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><button class="pismeno_r" onclick="playSound('ring')">ring</button></td>
+                                                        <td><button class="pismeno_r" onclick="playSound('rang')">rang</button></td>
+                                                        <td><button class="pismeno_r" onclick="playSound('rung')">rung</button></td>
+                                                        <td>zvoniť</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <tr>
+                                                          <td><button class="pismeno_r" onclick="playSound('run')">run</button></td>
+                                                          <td><button class="pismeno_r" onclick="playSound('ran')">ran</button></td>
+                                                          <td><button class="pismeno_r" onclick="playSound('run')">run</button></td>
+                                                          <td>utekať, bežať</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <tr>
+                                                            <td><button class="pismeno_s" onclick="playSound('say')">say</button></td>
+                                                            <td><button class="pismeno_s" onclick="playSound('said')">said</button></td>
+                                                            <td><button class="pismeno_s" onclick="playSound('said')">said</button></td>
+                                                            <td>povedať</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td><button class="pismeno_s" onclick="playSound('see')">see</button></td>
+                                                            <td><button class="pismeno_s" onclick="playSound('saw')">saw</button></td>
+                                                            <td><button class="pismeno_s" onclick="playSound('seen')">seen</button></td>
+                                                            <td>vidieť</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <tr>
+                                                              <td><button class="pismeno_s" onclick="playSound('sell')">sell</button></td>
+                                                              <td><button class="pismeno_s" onclick="playSound('sold')">sold</button></td>
+                                                              <td><button class="pismeno_s" onclick="playSound('sold')">sold</button></td>
+                                                              <td>predať</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td><button class="pismeno_s" onclick="playSound('send')">send</button></td>
+                                                              <td><button class="pismeno_s" onclick="playSound('sent')">sent</button></td>
+                                                              <td><button class="pismeno_s" onclick="playSound('sent')">sent</button></td>
+                                                              <td>poslať</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td><button class="pismeno_s" onclick="playSound('set')">set</button></td>
+                                                              <td><button class="pismeno_s" onclick="playSound('set')">set</button></td>
+                                                              <td><button class="pismeno_s" onclick="playSound('set')">set</button></td>
+                                                              <td>nastaviť</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <tr>
+                                                                <td><button class="pismeno_s" onclick="playSound('shake')">shake</button></td>
+                                                                <td><button class="pismeno_s" onclick="playSound('shook')">shook</button></td>
+                                                                <td><button class="pismeno_s" onclick="playSound('shaken')">shaken</button></td>
+                                                                <td>triasť</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td><button class="pismeno_s" onclick="playSound('shine')">shine</button></td>
+                                                                <td><button class="pismeno_s" onclick="playSound('shone')">shone</button></td>
+                                                                <td><button class="pismeno_s" onclick="playSound('shone')">shone</button></td>
+                                                                <td>žiariť</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td><button class="pismeno_s" onclick="playSound('shoot')">shoot</button></td>
+                                                                <td><button class="pismeno_s" onclick="playSound('shot')">shot</button></td>
+                                                                <td><button class="pismeno_s" onclick="playSound('shot')">shot</button></td>
+                                                                <td>strieľať</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <tr>
+                                                                  <td><button class="pismeno_s" onclick="playSound('show')">show</button></td>
+                                                                  <td><button class="pismeno_s" onclick="playSound('showed')">showed</button></td>
+                                                                  <td><button class="pismeno_s" onclick="playSound('shown')">shown</button></td>
+                                                                  <td>ukázať</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td><button class="pismeno_s" onclick="playSound('shut')">shut</button></td>
+                                                                  <td><button class="pismeno_s" onclick="playSound('shut')">shut</button></td>
+                                                                  <td><button class="pismeno_s" onclick="playSound('shut')">shut</button></td>
+                                                                  <td>zavrieť</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td><button class="pismeno_s" onclick="playSound('sing')">sing</button></td>
+                                                                  <td><button class="pismeno_s" onclick="playSound('sang')">sang</button></td>
+                                                                  <td><button class="pismeno_s" onclick="playSound('sung')">sung</button></td>
+                                                                  <td>spievať</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <tr>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sink')">sink</button></td>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sank')">sank</button></td>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sunk')">sunk</button></td>
+                                                                    <td>potopiť sa</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sit')">sit</button></td>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sat')">sat</button></td>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sat')">sat</button></td>
+                                                                    <td>sedieť</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td><button class="pismeno_s" onclick="playSound('sleep')">sleep</button></td>
+                                                                    <td><button class="pismeno_s" onclick="playSound('slept')">slept</button></td>
+                                                                    <td><button class="pismeno_s" onclick="playSound('slept')">slept</button></td>
+                                                                    <td>spať</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <tr>
+                                                                      <td><button class="pismeno_s" onclick="playSound('smell')">smell</button></td>
+                                                                      <td><button class="pismeno_s" onclick="playSound('smelt')">smelled / smelt</button></td>
+                                                                      <td><button class="pismeno_s" onclick="playSound('smelt')">smelled / smelt</button></td>
+                                                                      <td>cítiť, zapáchať</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td><button class="pismeno_s" onclick="playSound('speak')">speak</button></td>
+                                                                      <td><button class="pismeno_s" onclick="playSound('spoke')">spoke</button></td>
+                                                                      <td><button class="pismeno_s" onclick="playSound('spoken')">spoken</button></td>
+                                                                      <td>hovoriť</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td><button class="pismeno_s" onclick="playSound('spell')">spell</button></td>
+                                                                      <td><button class="pismeno_s" onclick="playSound('spelt')">spelled / spelt</button></td>
+                                                                      <td><button class="pismeno_s" onclick="playSound('spelt')">spelled / spelt</button></td>
+                                                                      <td>hláskovať</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <tr>
+                                                                        <td><button class="pismeno_s" onclick="playSound('spend')">spend</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('spent')">spent</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('spent')">spent</button></td>
+                                                                        <td>minúť, utrácať</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td><button class="pismeno_s" onclick="playSound('spill')">spill</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('spilt')">spilled / spilt</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('spilt')">spilled / spilt</button></td>
+                                                                        <td>vyliať</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td><button class="pismeno_s" onclick="playSound('stand')">stand</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('stood')">stood</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('stood')">stood</button></td>
+                                                                        <td>stáť</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td><button class="pismeno_s" onclick="playSound('steal')">steal</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('stole')">stole</button></td>
+                                                                        <td><button class="pismeno_s" onclick="playSound('stolen')">stolen</button></td>
+                                                                        <td>kradnúť</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <tr>
+                                                                          <td><button class="pismeno_s" onclick="playSound('swim')">swim</button></td>
+                                                                          <td><button class="pismeno_s" onclick="playSound('swam')">swam</button></td>
+                                                                          <td><button class="pismeno_s" onclick="playSound('swum')">swum</button></td>
+                                                                          <td>plávať</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td><button class="pismeno_t" onclick="playSound('take')">take</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('took')">took</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('taken')">taken</button></td>
+                                                                          <td>vziať</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td><button class="pismeno_t" onclick="playSound('teach')">teach</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('taught')">taught</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('taught')">taught</button></td>
+                                                                          <td>učiť</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td><button class="pismeno_t" onclick="playSound('tell')">tell</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('told')">told</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('told')">told</button></td>
+                                                                          <td>povedať</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td><button class="pismeno_t" onclick="playSound('think')">think</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('thought')">thought</button></td>
+                                                                          <td><button class="pismeno_t" onclick="playSound('thought')">thought</button></td>
+                                                                          <td>myslieť</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <tr>
+                                                                            <td><button class="pismeno_t" onclick="playSound('throw')">throw</button></td>
+                                                                            <td><button class="pismeno_t" onclick="playSound('threw')">threw</button></td>
+                                                                            <td><button class="pismeno_t" onclick="playSound('thrown')">thrown</button></td>
+                                                                            <td>hodiť</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><button class="pismeno_u" onclick="playSound('understand')">understand</button></td>
+                                                                            <td><button class="pismeno_u" onclick="playSound('understood')">understood</button></td>
+                                                                            <td><button class="pismeno_u" onclick="playSound('understood')">understood</button></td>
+                                                                            <td>pochopiť</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><button class="pismeno_w" onclick="playSound('wake')">wake</button></td>
+                                                                            <td><button class="pismeno_w" onclick="playSound('woke')">woke</button></td>
+                                                                            <td><button class="pismeno_w" onclick="playSound('woken')">woken</button></td>
+                                                                            <td>zobudiť</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td><button class="pismeno_w" onclick="playSound('wear')">wear</button></td>
+                                                                            <td><button class="pismeno_w" onclick="playSound('wore')">wore</button></td>
+                                                                            <td><button class="pismeno_w" onclick="playSound('worn')">worn</button></td>
+                                                                            <td>nosiť (oblečenie)</td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <tr>
+                                                                              <td><button class="pismeno_w" onclick="playSound('win')">win</button></td>
+                                                                              <td><button class="pismeno_w" onclick="playSound('won')">won</button></td>
+                                                                              <td><button class="pismeno_w" onclick="playSound('won')">won</button></td>
+                                                                              <td>vyhrať</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td><button class="pismeno_w" onclick="playSound('write')">write</button></td>
+                                                                              <td><button class="pismeno_w" onclick="playSound('wrote')">wrote</button></td>
+                                                                              <td><button class="pismeno_w" onclick="playSound('written')">written</button></td>
+                                                                              <td>písať</td>
+                                                                            </tr>
+    </tbody>
+  </table>
+
+  <audio id="audioPlayer" src=""></audio>
+
+  <script>
+    function playSound(word) {
+      const audio = document.getElementById('audioPlayer');
+      audio.src = `sounds/${word}.mp3`; 
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
